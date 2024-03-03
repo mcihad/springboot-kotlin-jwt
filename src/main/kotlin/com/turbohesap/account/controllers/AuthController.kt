@@ -1,7 +1,7 @@
 package com.turbohesap.account.controllers
 
 import com.turbohesap.account.*
-import com.turbohesap.jwt.JwtUtils
+import com.turbohesap.common.jwt.JwtUtils
 import jakarta.validation.Valid
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

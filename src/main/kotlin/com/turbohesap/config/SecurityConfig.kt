@@ -1,7 +1,7 @@
 package com.turbohesap.config
 
-import com.turbohesap.jwt.AuthEntryPointJwt
-import com.turbohesap.jwt.AuthTokenFilter
+import com.turbohesap.common.jwt.AuthEntryPointJwt
+import com.turbohesap.common.jwt.AuthTokenFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.Profile
@@ -24,9 +24,9 @@ import org.springframework.web.client.HttpClientErrorException.Unauthorized
 @EnableMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 @Configuration
 class SecurityConfig(
-    private val userDetailsService: UserDetailsService,
-    private val unauthorizedHandler: AuthEntryPointJwt,
-    private val authTokenFilter: AuthTokenFilter
+        private val userDetailsService: UserDetailsService,
+        private val unauthorizedHandler: AuthEntryPointJwt,
+        private val authTokenFilter: AuthTokenFilter
 ) {
 
     @Bean

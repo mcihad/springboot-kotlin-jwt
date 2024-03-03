@@ -1,4 +1,4 @@
-package com.turbohesap.models
+package com.turbohesap.common.models
 
 import jakarta.persistence.MappedSuperclass
 import org.hibernate.annotations.TenantId

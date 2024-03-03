@@ -1,4 +1,4 @@
-package com.turbohesap.models
+package com.turbohesap.common.models
 
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id

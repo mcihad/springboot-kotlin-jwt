@@ -1,6 +1,6 @@
 package com.turbohesap.account
 
-import com.turbohesap.repositories.TenantAwareRepository
+import com.turbohesap.common.repositories.TenantAwareRepository
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface RoleRepository: JpaRepository<Role, Long> {

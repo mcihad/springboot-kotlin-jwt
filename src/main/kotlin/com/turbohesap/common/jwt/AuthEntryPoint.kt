@@ -1,4 +1,4 @@
-package com.turbohesap.jwt
+package com.turbohesap.common.jwt
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.servlet.ServletException

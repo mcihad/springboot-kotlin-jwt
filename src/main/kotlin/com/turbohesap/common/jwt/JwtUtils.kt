@@ -1,4 +1,4 @@
-package com.turbohesap.jwt
+package com.turbohesap.common.jwt
 
 
 import com.turbohesap.account.User

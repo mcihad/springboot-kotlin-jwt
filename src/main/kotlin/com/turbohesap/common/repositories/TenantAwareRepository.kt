@@ -1,6 +1,6 @@
-package com.turbohesap.repositories
+package com.turbohesap.common.repositories
 
-import com.turbohesap.models.TenantModel
+import com.turbohesap.common.models.TenantModel
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 import org.springframework.data.repository.NoRepositoryBean

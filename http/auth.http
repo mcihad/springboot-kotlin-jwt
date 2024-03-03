@@ -7,5 +7,19 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/api/auth/test
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YWRtaW4iLCJpYXQiOjE3MDkxNTE0NzUsImV4cCI6MTcwOTIzNzg3NSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ0aWQiOiIyNDA1N2VkMy05MmE1LTRiZmMtYTBiMy1mZTYwM2I0NzNhMjIiLCJ1aWQiOjUyfQ.LzcH7nEJdLJdskHUNuI4oUh7kvq2QvCI-a6wmLNxm6s
+GET http://localhost:8080/api/account/tenants/13
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YWRtaW4iLCJpYXQiOjE3MDk0NjQ5OTksImV4cCI6MTcwOTU1MTM5OSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ0aWQiOiJiODZkMzYxYS1kZmRjLTQ2MTUtYWJhNC0yNzZjMWY3YzAzN2EiLCJ1aWQiOjF9.7gLszAyxRNhlixm6uRA1nUiyRzWWJHfseTTUYp5Ri28
+
+###
+POST http://localhost:8080/api/account/tenants
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YWRtaW4iLCJpYXQiOjE3MDk0NjQ5OTksImV4cCI6MTcwOTU1MTM5OSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ0aWQiOiJiODZkMzYxYS1kZmRjLTQ2MTUtYWJhNC0yNzZjMWY3YzAzN2EiLCJ1aWQiOjF9.7gLszAyxRNhlixm6uRA1nUiyRzWWJHfseTTUYp5Ri28
+
+{
+  "name": "Deneme Hesabı",
+  "description": "Deneme Hesabı Açıklaması"
+}
+
+###
+DELETE http://localhost:8080/api/account/tenants/14
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YWRtaW4iLCJpYXQiOjE3MDk0NjQ5OTksImV4cCI6MTcwOTU1MTM5OSwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ0aWQiOiJiODZkMzYxYS1kZmRjLTQ2MTUtYWJhNC0yNzZjMWY3YzAzN2EiLCJ1aWQiOjF9.7gLszAyxRNhlixm6uRA1nUiyRzWWJHfseTTUYp5Ri28

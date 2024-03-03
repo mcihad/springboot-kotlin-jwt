@@ -1,4 +1,4 @@
-package com.turbohesap.multitenant
+package com.turbohesap.common.multitenant
 
 import org.hibernate.cfg.AvailableSettings
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver

@@ -1,9 +1,9 @@
-package com.turbohesap.jwt
+package com.turbohesap.common.jwt
 
 
 import com.turbohesap.account.User
 import com.turbohesap.account.services.UserDetailsServiceImpl
-import com.turbohesap.multitenant.TenantIdentifierResolver
+import com.turbohesap.common.multitenant.TenantIdentifierResolver
 import jakarta.servlet.FilterChain
 import jakarta.servlet.ServletException
 import jakarta.servlet.http.HttpServletRequest
@@ -20,9 +20,9 @@ import java.io.IOException
 
 @Component
 class AuthTokenFilter(
-    private val jwtUtils: JwtUtils,
-    private val userDetailsService: UserDetailsServiceImpl,
-    private val tenantIdentifierResolver: TenantIdentifierResolver
+        private val jwtUtils: JwtUtils,
+        private val userDetailsService: UserDetailsServiceImpl,
+        private val tenantIdentifierResolver: TenantIdentifierResolver
 ) : OncePerRequestFilter() {
 
     @Throws(ServletException::class, IOException::class)

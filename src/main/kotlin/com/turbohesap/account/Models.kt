@@ -1,6 +1,6 @@
 package com.turbohesap.account
 
-import com.turbohesap.models.AbstractJpaPersistable
+import com.turbohesap.common.models.AbstractJpaPersistable
 import jakarta.persistence.*
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
